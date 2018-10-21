@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Git and Github</title>
+        <link rel="icon" href="./img/icon-github.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-indigo.min.css"/>
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header ">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">    
+                    <span class="mdl-layout-title">Git and Github</span>
+                    <nav class="mdl-layout-spacer"></nav>
+                    <nav class="mdl-navigation">
+                        <a href="index.html" class="mdl-navigation__link">What's it?</a>
+                        <a href="how_to_use.html" class="mdl-navigation__link">How to use?</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Git and Github</span>
+                <nav class="mdl-navigation">  
+                    <a href="index.html" class="mdl-navigation__link">What's it?</a>
+                    <a href="how_to_use.html" class="mdl-navigation__link">How to use?</a>
+                </nav>
+            </div>
+            <div class="mdl-layout__content">
+                <main>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col titulo"><h3>Installing Git for Windows</h3></div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--4-col"><p>On the official <a target="_blank" href="http://git-scm.com/">Git website</a> click on download for Windows and on the next page choose the type of your system, whether it is 32 or 64 bit. Continue to press <b>"Next"</b> until the installation is complete. In the Windows version, Git comes with its own command prompt (Git Bash), which in addition to the git commands also provides some Unix commands that can be very handy (as well as being much nicer than the standard Windows command prompt ).</p></div>
+                        <div class="mdl-cell--4-col-phone mdl-cell mdl-cell--4-col">
+                            <div class="demo-card-image mdl-card install-git mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="demo-card-image__filename" style="color:black;">Official Git Website</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                            <div class="mdl-cell mdl-cell--12-col titulo"><h3>Creating a New Repository on Github</h3></div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col"><p>
+                            On the official <a target="_blank" href="https://github.com/">GitHub website</a>, sign up and after your email is authenticated, point your cursor to the upper right corner and click on the plus icon and select the "New Repository" option. You will then be redirected to a page where you will create the new repository by defining the name, its description, its type of visibility - whether public or private - and the option to generate a README.md file, to be displayed on the home page from the project.</p></div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--4-col">
+                            <div class="demo-card-image mdl-card site-github mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="demo-card-image__filename">Official GitHub Website</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-cell--4-col-phone mdl-cell mdl-cell--4-col">
+                            <div class="demo-card-image mdl-card repository mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand"></div>
+                                <div class="mdl-card__actions">
+                                    <span class="demo-card-image__filename" style="color: black;">New Repository</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col titulo"><h3>SSH Authentication</h3></div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>After signing up for GitHub, login, and now we need to create an SSH key. In any directory of your operating system, right-click and select the "Git Bash Here" option, after opening enter the following command:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">ssh-keygen -t rsa -C "your_mail@email.com"</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>Enter your email address in GitHub. Press enter on the next question, leaving the default file name to be generated. The next question will ask you for a password. If you wish, create the password, if not, press enter. Enter now: </p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">notepad ~/.ssh/id_rsa.pub</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>The key will appear in Notepad, so you can copy it.</p>
+                            <p>Now go to the upper right corner, click on your GitHub user, go to "Settings" and then "SSH and GPG Keys". Click "New SSH key." Enter a title for the key. And paste in the "Key" field the entire contents of the id_rsa.pub file, which was opened in Notepad.</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--12-col titulo"><h3>Organizing the House</h3></div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>At the end of the SSH configuration, we can start using Git. First add the username and email, remembering that the email has to be registered in GitHub, with the following commands:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">git config --global user.name "First Name Last Name"<br>git config --global user.email "your_email@email.com"</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>After executing the commands, we will initialize a Git repository in the folder we are:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">git init</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>As an example, we will create a <code> .txt </code> file to add together with other possible files already in your directory to a commit:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">touch test.txt<br>git add .<br>git commit -m "First commit"</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>Still in "Git Bash" enter the command to add the remote GitHub repository to your project:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">git remote add origin https://github.com/user/repository.git</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>Finally, to send your project changes to your GitHub repository, type:</p>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-offset-desktop mdl-cell--8-col">
+                            <pre class="mdl-shadow--2dp">git push origin master</pre>
+                        </div>
+                    </div>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell--4-col-phone mdl-cell--2-offset-desktop mdl-cell mdl-cell--8-col">
+                            <p>
+                                    By following these steps you will have learned how to use Git and GitHub for the first time. For more information go to the Git or GitHub documentation website. Good Studies!</p>
+                        </div>
+                    </div>
+                </main>
+                <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer--left-section">
+                        <div class="mdl-logo">Git and Github</div>
+                        <ul class="mdl-mini-footer--link-list">
+                            <li><a target="_blank" href="https://github.com/">Github</a></li>
+                            <li><a target="_blank" href="http://nexti.fapce.edu.br/">Nexti - Núcleo de Extenção de Tecnologia da Informação</a></li>
+                        </ul>
+                    </div>
+                    <div class="mdl-mini-footer--right-section">
+                        <div class="mdl-logo">Developed by Matheus Maximiano</div>
+                        <ul class="mdl-mini-footer--link-list">
+                            <li><a target="_blank" href="https://getmdl.io/index.html">Fremework Material Design Lite</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>  
+    </body>
+</html>
